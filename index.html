@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboubakar Agara | Portfolio - Génie Civil</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lien vers votre feuille de style personnalisée -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- En-tête / Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-amber-500 flex items-center gap-2">
+                <i class="fa-solid fa-hard-hat"></i> AGARA ABOUBAKAR
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#accueil" class="hover:text-amber-500 transition-colors">Accueil</a>
+                <a href="#apropos" class="hover:text-amber-500 transition-colors">À Propos</a>
+                <a href="#competences" class="hover:text-amber-500 transition-colors">Compétences</a>
+                <a href="#projets" class="hover:text-amber-500 transition-colors">Projets</a>
+                <a href="#contact" class="px-4 py-2 bg-amber-500 text-slate-950 font-bold rounded-lg hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20">Contact</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-amber-500 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#accueil" class="block hover:text-amber-500 py-1">Accueil</a>
+            <a href="#apropos" class="block hover:text-amber-500 py-1">À Propos</a>
+            <a href="#competences" class="block hover:text-amber-500 py-1">Compétences</a>
+            <a href="#projets" class="block hover:text-amber-500 py-1">Projets</a>
+            <a href="#contact" class="block text-amber-500 font-bold py-1">Contact</a>
+        </div>
+    </header>
+
+    <!-- Section Accueil (Hero) -->
+    <section id="accueil" class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center z-10 animate-fade-in">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm mb-6">
+                <span>🇧🇫 Burkina Faso</span>
+                <span>•</span>
+                <span>HESTIM CPGE Génie Civil</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Futur Ingénieur en <span class="text-amber-500">Génie Civil</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                Étudiant rigoureux en 1ère année de Classe Préparatoire Intégrée. Passionné par la construction, la structure et la conception de projets durables.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projets" class="px-6 py-3 bg-amber-500 text-slate-950 font-bold rounded-xl hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                    <i class="fa-solid fa-helmet-safety"></i> Voir mes projets
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-slate-900 border border-slate-700 text-slate-200 font-semibold rounded-xl hover:border-amber-500 transition-all">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="py-24 px-6 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">À Propos de <span class="text-amber-500">Moi</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-slate-300">
+                    <p class="leading-relaxed">
+                        Je m'appelle <strong class="text-white">Aboubakar Agara</strong>, originaire du Burkina Faso 🇧🇫. Fort d'un Baccalauréat Professionnel en Génie Civil Construction, je poursuis actuellement mon cursus académique en 1ère année de Classe Préparatoire à l'école <strong class="text-white">HESTIM</strong>.
+                    </p>
+                    <p class="leading-relaxed">
+                        Mon parcours m'a permis d'acquérir de solides bases théoriques et pratiques dans le domaine de la construction, de la lecture de plans et des matériaux. Je combine rigueur technique et esprit analytique pour relever les défis de l'ingénierie moderne.
+                    </p>
+                    <div class="pt-4 flex gap-4">
+                        <a href="https://www.linkedin.com/in/agara-aboubakar-725846442" target="_blank" class="px-4 py-2 bg-[#0077b5]/20 border border-[#0077b5]/40 text-[#0077b5] rounded-lg hover:bg-[#0077b5] hover:text-white transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:a.aboubakar@hestim.ma" class="px-4 py-2 bg-slate-800 border border-slate-700 text-slate-200 rounded-lg hover:border-amber-500 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid gap-6">
+                    <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl shadow-xl">
+                        <div class="text-amber-500 text-2xl font-bold mb-1">2025 - 2026</div>
+                        <div class="text-lg font-semibold text-white">Classe Préparatoire - HESTIM</div>
+                        <p class="text-sm text-slate-400 mt-2">1ère année CPGE en Génie Civil (Maroc).</p>
+                    </div>
+                    <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl shadow-xl">
+                        <div class="text-amber-500 text-2xl font-bold mb-1">Baccalauréat Pro</div>
+                        <div class="text-lg font-semibold text-white">Génie Civil Construction</div>
+                        <p class="text-sm text-slate-400 mt-2">Acquisition des compétences fondamentales en gros œuvre et études de chantier.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">Mes <span class="text-amber-500">Compétences</span></h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Conception & Dessin</h3>
+                    <p class="text-slate-400 text-sm">Lecture et interprétation de plans architecturaux et structurels, modélisation CAO de base.</p>
+                </div>
+
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Résistance des Matériaux</h3>
+                    <p class="text-slate-400 text-sm">Analyse des structures, comportement des matériaux de construction et bétons.</p>
+                </div>
+
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Technologie de Chantier</h3>
+                    <p class="text-slate-400 text-sm">Connaissance des procédés généraux de construction, gros œuvre et sécurité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="py-24 px-6 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">Projets & <span class="text-amber-500">Travaux</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-amber-500 transition-all">
+                    <div class="text-amber-500 text-sm font-semibold mb-2">Projet Académique • HESTIM</div>
+                    <h3 class="text-xl font-bold mb-3">Étude de Structure & Matériaux</h3>
+                    <p class="text-slate-400 text-sm mb-6">Analyse dimensionnelle et calculs préliminaires de structures en béton armé dans le cadre des classes préparatoires.</p>
+                    <span class="inline-block px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full">Génie Civil</span>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-amber-500 transition-all">
+                    <div class="text-amber-500 text-sm font-semibold mb-2">Baccalauréat Professionnel</div>
+                    <h3 class="text-xl font-bold mb-3">Projet de Construction Bâtiment</h3>
+                    <p class="text-slate-400 text-sm mb-6">Élaboration de dossiers techniques, métrés et planification de travaux pour un ouvrage de type résidentiel.</p>
+                    <span class="inline-block px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full">Construction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Restons en <span class="text-amber-500">Contact</span></h2>
+            <p class="text-slate-400 mb-10">Vous souhaitez échanger sur une opportunité ou un projet en génie civil ? N'hésitez pas à m'écrire.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="mailto:a.aboubakar@hestim.ma" class="px-6 py-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-amber-500 transition-all flex items-center justify-center gap-3 text-slate-200">
+                    <i class="fa-solid fa-envelope text-amber-500 text-xl"></i>
+                    <span>a.aboubakar@hestim.ma</span>
+                </a>
+                <a href="https://www.linkedin.com/in/agara-aboubakar-725846442" target="_blank" class="px-6 py-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-amber-500 transition-all flex items-center justify-center gap-3 text-slate-200">
+                    <i class="fa-brands fa-linkedin text-[#0077b5] text-xl"></i>
+                    <span>Profil LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-slate-900 text-slate-500 text-sm">
+        <p>&copy; 2026 Aboubakar Agara • HESTIM Génie Civil. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
